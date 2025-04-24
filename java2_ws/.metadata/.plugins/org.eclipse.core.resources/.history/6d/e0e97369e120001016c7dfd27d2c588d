@@ -1,0 +1,7 @@
+package day1prac.제네릭실습;
+
+public class 위치반환Main {
+	public static void main(String[] args) {
+		
+	}
+}

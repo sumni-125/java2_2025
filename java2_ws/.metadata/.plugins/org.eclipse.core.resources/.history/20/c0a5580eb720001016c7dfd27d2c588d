@@ -1,0 +1,11 @@
+package a;
+
+public class AAA implements 코드 {
+
+	@Override
+	public void run() {
+		System.out.println("ㅋ 어하이~");
+		
+	}
+	
+}

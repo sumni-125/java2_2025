@@ -1,0 +1,16 @@
+package day1prac.정렬제네릭;
+
+public class 객체배열정렬하기 {
+	public static void main(String[] args) {
+		
+Acorn[] list = new  Acorn[5];
+		
+		list[0] = new Acorn("ljh","이정호",500);
+		list[1]= new Acorn("kmh","김민환",600);
+		list[2]= new Acorn("kym","김유민",150);
+		list[3]= new Acorn("psk", "박수경",450);
+		list[4]= new Acorn("lsm", "이수민",90);
+		
+		
+	}
+}

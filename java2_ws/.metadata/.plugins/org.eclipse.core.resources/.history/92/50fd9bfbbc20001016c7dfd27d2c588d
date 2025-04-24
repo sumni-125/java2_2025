@@ -1,0 +1,21 @@
+package day1prac.제네릭클래스;
+
+public class BoxMain {
+
+	public static void main(String[] args) {
+		
+		BoxInteger box1 = new BoxInteger();
+		box1.setItem(3);
+		int result1 = box1.getItem();
+		
+		BoxString box2 = new BoxString();
+		box2.setItem("문자열전용");
+		String result2 = box2.getItem();
+		
+		BoxAcorn box3 = new BoxAcorn();
+		box2.setItem("문자열전용");
+		Acorn result3 = box2.getItem();
+		
+	}
+
+}

@@ -1,0 +1,37 @@
+package day1prac.제네릭클래스;
+
+public class BoxMain {
+
+	public static void main(String[] args) {
+		
+		BoxInteger box1 = new BoxInteger();
+		box1.setItem(3);
+		int result1 = box1.getItem();
+		
+		BoxString box2 = new BoxString();
+		box2.setItem("문자열전용");
+		String result2 = box2.getItem();
+		
+		BoxAcorn box3 = new BoxAcorn();
+		box3.setItem(new Acorn("kym","김유민") );
+		Acorn result3 = box3.getItem();
+		
+		System.out.println(result1);
+		System.out.println(result2);
+		System.out.println(result3);
+		
+		//
+		
+		BoxG<Integer> gbox1 = new BoxG<>();
+		gbox1.setItem(10);
+		int gresult1 = gbox1.getItem();
+		
+		BoxG<String> gbox2 = new BoxG<>();
+		gbox2.setItem("문자열담긴다");
+		String gresult2 = gbox2.getItem();
+		
+		BoxG<Acorn> gbox3 = new BoxG<>();
+		Acorn gresult3 = gbox3.getItem();
+	}
+
+}

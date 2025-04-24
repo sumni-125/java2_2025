@@ -1,0 +1,7 @@
+package day1prac.제네릭매서드;
+
+public class PrintExGMain {
+	public static void main(String[] args) {
+		PrintExG.<Integer>print()
+	}
+}

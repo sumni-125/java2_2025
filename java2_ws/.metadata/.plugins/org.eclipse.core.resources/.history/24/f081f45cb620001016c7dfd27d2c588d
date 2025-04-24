@@ -1,0 +1,29 @@
+package day1prac.라이브러리만들기;
+
+public class LsmLib {
+	public void star3() {
+		for (int i = 0; i < 3; i++) {
+			System.out.print("* ");
+		}
+		System.out.println();
+	}
+
+	public void printChar(char a) {
+
+		for (int i = 0; i < 3; i++) {
+			System.out.println(a);
+		}
+	}
+
+	// 라이브러리를 제공할 때
+	// 결정할 수 없는 코드가 생김 =>
+	// 인터페이스 활용함(라이브러리를 제공하는 사람이)
+
+	// interface 코드 { void run(); }
+
+	public void runCode(코드 code) {
+		for (int i = 0; i < 3; i++) {
+			code.run();
+		}
+	}
+}

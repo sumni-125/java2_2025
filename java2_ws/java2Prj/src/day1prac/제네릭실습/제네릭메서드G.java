@@ -1,0 +1,10 @@
+package day1prac.제네릭실습;
+
+public class 제네릭메서드G {
+	public static <T> T choice(T t1,T t2){
+		
+		double r = Math.random();
+
+		return r > 0.5 ?t1: t2;
+	}
+}

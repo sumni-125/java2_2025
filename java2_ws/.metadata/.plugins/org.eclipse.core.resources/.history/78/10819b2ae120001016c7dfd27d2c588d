@@ -1,0 +1,11 @@
+package day1prac.제네릭실습;
+
+public class 위치반환 {
+	public static <T> int 위치반환(String[] arr, T t) {
+		
+		for(int i=0;i<)
+		
+		return 0;
+		
+	}
+}

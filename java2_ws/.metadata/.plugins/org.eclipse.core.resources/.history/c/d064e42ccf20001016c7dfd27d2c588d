@@ -1,0 +1,18 @@
+package day1prac.제네릭매서드;
+
+public class 제네릭연습하기Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int result1 = 제네릭메서드연습.choiceint(1,2);
+		System.out.println(result1);
+		
+		String result2 =제네릭메서드연습.choiceString("뿡","뿌직");
+		System.out.println(result2);
+		
+		boolean result3 =제네릭메서드연습.choiceBoolean(true,false);
+		System.out.println(result2);
+		
+	}
+
+}

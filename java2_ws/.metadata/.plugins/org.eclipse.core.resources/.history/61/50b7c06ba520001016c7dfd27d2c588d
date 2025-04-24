@@ -1,0 +1,28 @@
+package day1prac.정렬;
+
+public class 객체배열정렬하기 {
+	
+	public static void main(String[] args) {
+		
+		Acorn[] list = new Acorn[5];
+		list[0]=new Acorn("ljh","1234",500);
+		list[1] = new Acorn("kmh","1234",600);
+		list[2] = new Acorn("kym","9999", 150);
+		list[3] = new Acorn("psk","1248",450);
+		list[4] = new Acorn("lsm","0123",90);
+		
+		for(int i=0;i<list.length;i++) {
+			Acorn acorn = list[i];
+			System.out.println(acorn);
+		}
+		
+		//정렬하기 포인트순( 오름차순 )
+		
+		
+		//정렬하기 이름순( 오름차순 )
+		
+		
+		
+	}
+	
+}

@@ -1,0 +1,21 @@
+package day1prac.정렬;
+
+public class 객체배열정렬하기 {
+	
+	public static void main(String[] args) {
+		
+		Acorn[] list = new Acorn[5];
+		list[0]=new Acorn("ljh","1234");
+		list[1] = new Acorn("kmh","1234");
+		list[2] = new Acorn("kym","9999");
+		list[3] = new Acorn("psk","1248");
+		list[4] = new Acorn("lsm","0123");
+		
+		for(int i=0;i<list.length;i++) {
+			Acorn acorn = list[i];
+			System.out.println(acorn);
+		}
+		
+	}
+	
+}

@@ -1,0 +1,7 @@
+package day1prac.제네릭매서드;
+
+public class 제네릭메서드G {
+	public static <T> T choice(T t1,T t2){
+		return t2;
+	}
+}

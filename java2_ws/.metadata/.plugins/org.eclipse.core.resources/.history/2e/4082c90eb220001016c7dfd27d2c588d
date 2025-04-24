@@ -1,0 +1,21 @@
+package day1prac.정렬;
+
+public class MyArrays로_정렬하기2 {
+
+	public static void main(String[] args) {
+
+		Acorn2[] list = new Acorn2[5];
+		list[0] = new Acorn2("ljh", "이정호", 500);
+		list[1] = new Acorn2("kmh", "김민환", 600);
+		list[2] = new Acorn2("kym", "김유민", 150);
+		list[3] = new Acorn2("psk", "박수경", 450);
+		list[4] = new Acorn2("lsm", "이수민", 90);
+
+		MyArrays.sort(list);
+		
+	}
+
+}
+
+
+//진짜븅신인가 타자 안치고 멍때리더니 다 끝나고나서 파일 달라고 지랄을함

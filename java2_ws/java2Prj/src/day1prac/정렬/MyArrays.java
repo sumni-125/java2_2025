@@ -1,0 +1,37 @@
+package day1prac.정렬;
+
+public class MyArrays {
+
+	public static void sort(Object[] arr, MyComparator c) {
+		for (int i = 0; i < arr.length - 1; i++) {
+
+			for (int j = i + 1; j < arr.length; j++) {
+
+				if (c.compare(arr[i], arr[j]) > 0) { // 양수이면 두개의 자리를 교환한다
+					Object temp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = temp;
+
+				}
+			}
+
+		}
+	}
+
+	public static void sort(Object[] arr) {
+		for (int i = 0; i < arr.length - 1; i++) {
+			for (int j = i + 1; j < arr.length; j++) {
+				MyComparable obj = (MyComparable) arr[i];
+
+				if (obj.compareTo(arr[j]) > 0) {
+					// 두개요소교환
+					Object temp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = temp;
+
+				}
+			}
+		}
+	}
+
+}
