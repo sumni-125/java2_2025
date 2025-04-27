@@ -1,0 +1,12 @@
+package day2prac.오전실습;
+
+public class Sum implements MyRunnable {
+
+	@Override
+	public int calc(int a, int b) {
+		
+		return 0;
+	}
+
+	
+}

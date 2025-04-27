@@ -1,0 +1,48 @@
+package day2prac.함수형인터페이스2;
+
+import java.util.function.Consumer;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
+
+public class 실습 {
+	public static void main(String[] args) {
+		Runnable r =() ->{
+			System.out.println("건물주되기");
+		};
+		r.run();
+		
+		Consumer<Integer> c = (money)->{
+			System.out.println(money+" 먹는데 다 썼음");
+		};
+		
+		c.accept(2100000000);
+		
+		Supplier<String> s = ()->{
+			System.out.println("요리의 레시피");
+			return "마라떡볶이";
+		};
+		
+		String resultFood = s.get();
+		System.out.println(resultFood);
+		
+		Predicate<String> p =(str)->{
+			if(str.equals(resultFood)) {
+				return true;
+			}else {
+				return false;
+			}
+		};
+		
+		boolean resultBoolean = p.test("마라떡볶이");
+		
+		if(resultBoolean) {
+			System.out.println("요리가 맞아요");
+		}else {
+			
+			System.out.println("요리가 맞아요");
+		}
+		
+		
+		
+	}
+}

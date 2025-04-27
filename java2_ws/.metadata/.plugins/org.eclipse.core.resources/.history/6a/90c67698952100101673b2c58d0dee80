@@ -1,0 +1,12 @@
+package day2Prac.함수형인터페이스;
+
+public class Star implements Runnable{
+
+	//별찍기
+	@Override
+	public void pick() {
+		System.out.println("***");
+		
+	}
+
+}

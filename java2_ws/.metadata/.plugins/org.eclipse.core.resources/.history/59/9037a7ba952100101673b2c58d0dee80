@@ -1,0 +1,5 @@
+package day2Prac.복습실습;
+
+public interface MyRunnable {
+	void calc(int a);
+}

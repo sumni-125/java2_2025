@@ -1,0 +1,10 @@
+package day2prac.함수형인터페이스;
+
+public class MyRunnable인터페이스구현 {
+	public static void main(String[] args) {
+		
+		//
+		
+		
+	}
+}

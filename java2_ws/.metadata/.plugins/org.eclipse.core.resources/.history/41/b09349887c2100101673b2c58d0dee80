@@ -1,0 +1,8 @@
+package day2prac.함수형인터페이스;
+
+//함수형 인터페이스
+
+@Func
+public interface MyRunnable {
+	void run();
+}

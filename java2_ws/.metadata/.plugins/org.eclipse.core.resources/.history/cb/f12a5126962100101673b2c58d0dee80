@@ -1,0 +1,6 @@
+package day2prac.함수형인터페이스실습;
+
+public interface cal
+{
+	int cal(int a, int b);
+}

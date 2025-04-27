@@ -1,0 +1,5 @@
+package day2Prac.함수형인터페이스;
+
+public interface Runnable {
+	void pick();
+}

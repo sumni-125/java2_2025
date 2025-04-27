@@ -1,0 +1,28 @@
+package day2prac.오전실습;
+
+public class CalcMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//이름이 있는 클래스
+		Sum sum = new Sum();
+		sum.calc(5, 3);
+		
+		//익명클래스
+		
+		MyRunnable sub = new MyRunnable() {
+			
+			@Override
+			public int calc(int a, int b) {
+				// TODO Auto-generated method stub
+				return a-b;
+			}
+		};
+		
+		
+		//람다식
+		
+	}
+
+}

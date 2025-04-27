@@ -1,0 +1,5 @@
+package day2prac.forEach;
+
+public class A implements Consumer<String>{
+
+}

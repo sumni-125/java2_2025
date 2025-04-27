@@ -1,0 +1,30 @@
+package day2prac.함수형인터페이스;
+
+public class MyRunnable인터페이스구현 {
+	public static void main(String[] args) {
+		
+		//
+		이수민 s = new 이수민();
+		
+		s.run();
+		MyRunnable r = s;
+		r.run();
+		
+		
+		//익명
+		MyRunnable r2 = new MyRunnable() {
+
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				System.out.println("익명클래스 런런");
+			}
+			
+		};
+		r2.run();
+		
+		MyRunnable r3 = ()->{System.out.println("람다식 런런");};
+		r3.run();
+		
+	}
+}

@@ -1,0 +1,31 @@
+package day2prac.forEach;
+
+import java.util.ArrayList;
+
+public class forEach사용하기2 {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> names = new ArrayList<>();
+		
+		names.add("윤현기");
+		names.add("윤현기");
+		names.add("윤현기");
+		names.add("윤현기");
+		names.add("윤현기");
+		names.add("윤현기");
+		names.add("윤현기");
+		names.add("윤현기");
+		names.add("윤현기");
+		names.add("윤현기");
+		names.add("윤현기");
+		names.add("윤현기");
+		names.add("윤현기");
+		names.add("윤현기");
+		
+		
+		
+
+	}
+
+}

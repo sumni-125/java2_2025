@@ -1,0 +1,59 @@
+package day2prac.forEach;
+
+import java.util.ArrayList;
+import java.util.function.Consumer;
+
+public class forEach사용하기 {
+
+	public static void main(String[] args) {
+		
+		ArrayList<Moving> list = new ArrayList<>();
+
+		list.add(new Moving("장주원", "구룡포", 100));
+		list.add(new Moving("이미현", "경기", 80));
+		list.add(new Moving("김두식", "문산", 90));
+		list.add(new Moving("전영석", "봉평", 88));
+		
+		for(Moving m: list) {
+			System.out.println(m);
+		}
+		
+		/*
+		 
+		 interface Consumer<T>{
+		 	void accept(T);
+		 }
+		 
+		 interface Consumer{
+		 	void accept(Object o);
+		 }
+		 
+		 */
+		
+		list.forEach(new Consumer() {
+
+			@Override
+			public void accept(Object t) {
+				Moving m = (Moving) t;
+				
+				System.out.println(m.getName()+" "+m.getAlias()+"^^");
+				
+			}
+			
+		});
+		
+		list.forEach(new Consumer<Moving>(){
+
+			@Override
+			public void accept(Moving t) {
+				System.out.println(t.name+" "+t.alias+"^^");
+				
+			}
+
+			
+			
+		});
+		
+	}
+
+}

@@ -1,0 +1,22 @@
+package day2prac.오후실습;
+
+import java.util.function.Consumer;
+
+public class 박수경_오후실습 {
+	public static void main(String[] args) {
+		/*
+		영화 예매 시스템
+		Consumer: 예매 완료 메시지
+		Supplier: 오늘의 추천 영화 출력
+		*/
+		
+		Consumer<String>c = (check)->{
+			
+			System.out.println(check);
+		};
+		
+		c.accept("예매 완료");
+		
+		
+	}
+}

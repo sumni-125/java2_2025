@@ -1,0 +1,11 @@
+package day2prac.함수형인터페이스2;
+
+public class 실습 {
+	public static void main(String[] args) {
+		Runnable r =() ->{
+			public void run() {
+				
+			}
+		}
+	}
+}

@@ -1,0 +1,68 @@
+package day2prac.복습실습;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+import day1prac.정렬.Acorn;
+
+public class Moving정렬하기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Moving[] list = new Moving[4];
+
+		list[0] = new Moving("장주원", "구룡포", 100);
+		list[1] = new Moving("이미현", "경기", 80);
+		list[2] = new Moving("김두식", " 문산", 90);
+		list[3] = new Moving("전영석", "봉평", 88);
+
+		Arrays.sort(list, new Comparator() {
+
+			@Override
+			public int compare(Object o1, Object o2) {
+
+				Moving m1 = (Moving) o1;
+				Moving m2 = (Moving) o2;
+
+				return m1.power - m2.power;
+			}
+
+		});
+
+		for (int i = 0; i < list.length; i++) {
+			Moving m = list[i];
+			System.out.println(m);
+		}
+
+		System.out.println("ArrayList");
+		ArrayList<Moving> list2 = new ArrayList<Moving>();                                            
+		list2.add(new Moving("장주원", "구룡포", 100));
+		list2.add(new Moving("이미현", "경기", 80));
+		list2.add(new Moving("김두식", " 문산", 90));
+		list2.add(new Moving("전영석", "봉평", 88));
+		
+		Collections.sort(list2, new Comparator() {
+
+			@Override
+			public int compare(Object o1, Object o2) {
+				Moving m1 = (Moving) o1;
+				Moving m2 = (Moving) o2;
+
+				return m1.power - m2.power;
+			}
+			
+		});
+		
+		Collections.sort(list2, new Comparator<Moving>() {
+			
+		});
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,124 @@
+package day2prac.함수형인터페이스2;
+
+import java.util.ArrayList;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
+
+public class RunnableEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Runnable r = new Runnable() {
+
+			@Override
+			public void run() {
+				System.out.println("run!");
+
+			}
+		};
+
+		r.run();
+
+		Runnable r2 = () -> {
+			System.out.println("run2!!");
+		};
+		r2.run();
+
+		/*
+		 * interface Consumer<T> { void accept(T t); }
+		 */
+
+		Consumer c = new Consumer<Integer>() {
+
+			@Override
+			public void accept(Integer t) {
+				// TODO Auto-generated method stub
+				t = t - 100;
+				t -= 200;
+				System.out.println((t));
+			}
+
+		};
+
+		c.accept(10000);
+
+		Consumer<String> c2 = (str) -> {
+			System.out.println(str + " ^^~\n");
+		};
+
+		c2.accept("\n람다좋아");
+
+		ArrayList<String> likes = new ArrayList<>();
+		likes.add("책");
+		likes.add("커피");
+		likes.add("사과");
+
+		likes.forEach((item) -> {
+			System.out.println(item);
+		});
+
+		likes.forEach(new Consumer<String>() {
+
+			@Override
+			public void accept(String t) {
+
+				System.out.println("익명 " + t);
+
+			}
+		});
+
+		// Supplier<T> T get()
+		/*
+		 * 
+		 * interface Supplier<T>{ T get(); }
+		 * 
+		 */
+
+		Supplier<String> s = () -> {
+			return "람다로 구현한 문자열";
+		};
+		String result = s.get();
+		System.out.println(result);
+
+		Supplier<String> s2 = new Supplier<String>() {
+
+			@Override
+			public String get() {
+				// TODO Auto-generated method stub
+				return "~~~ 익명문자열제공";
+			}
+
+		};
+
+		String result2 = s2.get();
+		System.out.println(result2);
+
+		class A implements Supplier<String> {
+
+			@Override
+			public String get() {
+				// TODO Auto-generated method stub
+				return "이름이씨구현하는법";
+			}
+
+		}
+		A a = new A();
+		String result3 = a.get();
+		System.out.println(result3);
+		
+		Predicate<String> p = (str) -> {
+			if(str.equals("hello")) {
+				return true;
+			}else {
+				return false;
+			}
+		};
+		
+		boolean resultb =p.test("hello");
+		boolean resultb2;
+
+	}
+
+}

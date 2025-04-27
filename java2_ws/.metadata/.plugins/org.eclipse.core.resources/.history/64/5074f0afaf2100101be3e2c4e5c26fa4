@@ -1,0 +1,44 @@
+package day2prac.오후실습;
+
+import java.util.ArrayList;
+import java.util.function.Consumer;
+import java.util.function.Supplier;
+
+public class 박수경_오후실습 {
+	public static void main(String[] args) {
+		/*
+		영화 예매 시스템
+		Consumer: 예매 완료 메시지
+		Supplier: 오늘의 추천 영화 출력
+		*/
+		
+		//람다
+		Consumer<String>c = (check)->{
+			
+			System.out.println(check);
+		};
+		
+		c.accept("예매 완료");
+		
+		//익명
+		Consumer<String>c1 = new Consumer<String>() {
+
+			@Override
+			public void accept(String t) {
+				System.out.println(t);
+				
+			}};
+			
+			
+		//Supplier: 오늘의 추천 영화 출력
+			
+			ArrayList<Movie> list = new ArrayList<>();
+			list.add("");
+			
+			Supplier<String>s = ()->{
+				System.out.println("");
+			};
+		
+			
+	}
+}

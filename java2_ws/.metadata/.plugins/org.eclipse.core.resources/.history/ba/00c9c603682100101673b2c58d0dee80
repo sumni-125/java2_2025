@@ -1,0 +1,21 @@
+package day2prac.복습실습;
+
+import java.util.List;
+
+public class Moving정렬하기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		List<Moving>[] list;
+		
+		list[0] = Moving("장주원", "구룡포" , 100); 
+		list[1] = Moving( "이미현" , "경기" , 80);
+		list[2] = Moving("김두식" ," 문산" ,90);
+		list[3] = Moving("전영석", "봉평" , 88);
+		
+		Collections.sort ( List list , Comparator c )
+		
+	}
+
+}

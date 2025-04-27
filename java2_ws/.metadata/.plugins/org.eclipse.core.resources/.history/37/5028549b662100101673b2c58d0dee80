@@ -1,0 +1,17 @@
+package day2prac;
+
+public class 복습실습1 {
+
+	/*
+	 * 복습실습1 : 다음의 문제를 푸시오 Collections.sort ( List list , Comparator c ) 를 사용하여
+	 * 파워순으로 정렬하시오 <오름차순> Moving클래스 만들기 캐릭터이름, 암호명, 파워값 저장할 수 있는 Moving클래스 작성하기
+	 * 
+	 * class Moving{ String name; String alias ; int power; }
+	 * 
+	 * Comparator 구현시 1. 인터페이스를 구현한 클래스 이용하기 2 . 익명클래스를 작성하여 사용하기
+	 * 
+	 * Moving("장주원", "구룡포" , 100); Moving( "이미현" , "경기" , 80) Moving("김두식" ," 문산" ,
+	 * 90); Moving("전영석", "봉평" , 88);
+	 */
+
+}

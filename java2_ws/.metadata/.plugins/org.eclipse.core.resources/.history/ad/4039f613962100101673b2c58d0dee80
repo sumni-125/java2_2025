@@ -1,0 +1,7 @@
+package day2prac.오전실습.정연수_오전실습;
+
+
+public interface MenuRecommend {
+
+	String recommend();
+}
