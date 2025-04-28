@@ -1,0 +1,15 @@
+package day3Prac.stream1;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int[] arr = { 1, 2, 3, 4, 5 };
+
+		// 배열을ㄹ 스트림으로 얻어오기
+		// 기본형배열을 스트링으로 얻어오기 => Arrays.stream(arr);
+
+	}
+
+}

@@ -1,0 +1,22 @@
+package day3Prac.오후실습;
+
+import java.util.stream.Stream;
+
+public class String여러개다루기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String[] list = new String[5];
+		list[0] = "apple";
+		list[1] = "banana";
+		list[2] = "mango";
+		list[3] = "orange";
+		list[4] = "grape";
+		
+		Stream<String> stream = 
+		
+		
+	}
+
+}

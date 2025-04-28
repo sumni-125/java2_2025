@@ -1,0 +1,49 @@
+package day3Prac.stream1;
+
+import java.util.ArrayList;
+import java.util.function.Predicate;
+import java.util.stream.Stream;
+
+public class Hello출력하기 {
+
+	public static void main(String[] args) {
+		ArrayList<String> list = new ArrayList<>();
+
+		list.add("hi");
+		list.add("hello");
+		list.add("hello");
+		list.add("bye");
+		list.add("hello");
+		list.add("hi");
+
+		Stream<String> stream = list.stream();
+
+		stream.forEach(item -> {
+			System.out.println(item);
+		});
+
+		// 2) hello만 출력하기
+		System.out.println("\nhello출력");
+		stream = list.stream();
+		stream.filter(str -> str.equals("hello")).forEach(item -> {
+			System.out.println(item);
+		});
+
+		System.out.println("\nhi출력");
+		stream = list.stream();
+		stream.filter(new Predicate<String>() {
+
+			@Override
+			public boolean test(String t) {
+				// TODO Auto-generated method stub
+				return t.equals("hi");
+			}
+		}).forEach(item -> System.out.println(item));
+		
+		
+		//3) hello에서 2개만 출력하기
+		stream = list.stream();
+		
+	}
+
+}

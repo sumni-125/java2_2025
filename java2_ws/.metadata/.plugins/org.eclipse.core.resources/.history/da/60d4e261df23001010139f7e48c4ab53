@@ -1,0 +1,10 @@
+package day3Prac.collection;
+
+public class list와set을일관된방법으로다루기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

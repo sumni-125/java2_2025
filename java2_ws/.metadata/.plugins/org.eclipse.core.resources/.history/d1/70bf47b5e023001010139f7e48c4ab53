@@ -1,0 +1,13 @@
+package day3Prac.collection;
+
+public class MapEx {
+	public static void main(String[] args) {
+		
+		//key, value
+		
+		Map<> map = new HashMap<>();
+		
+		
+		
+	}
+}

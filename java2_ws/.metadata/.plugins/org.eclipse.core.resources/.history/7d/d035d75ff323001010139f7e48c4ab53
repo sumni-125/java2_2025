@@ -1,0 +1,27 @@
+package day3Prac.stream1;
+
+import java.util.ArrayList;
+import java.util.stream.Stream;
+
+public class Hello출력하기 {
+
+	public static void main(String[] args) {
+		ArrayList<String> list = new ArrayList<>();
+
+		list.add("hi");
+		list.add("hello");
+		list.add("hello");
+		list.add("bye");
+		list.add("hello");
+		
+		Stream<String> stream = list.stream();
+		
+		stream.forEach(item->{System.out.println(item);});
+		
+		//2) hello만 출력하기
+		stream = list.stream();
+		stream.filter(str-> str.equals("hello"));
+		
+	}
+
+}

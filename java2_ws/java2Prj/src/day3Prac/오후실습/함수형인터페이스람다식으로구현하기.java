@@ -1,0 +1,58 @@
+package day3Prac.오후실습;
+
+import java.util.function.DoubleFunction;
+import java.util.function.IntFunction;
+import java.util.function.LongFunction;
+
+public class 함수형인터페이스람다식으로구현하기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		/*
+		 * 기본자료형을 입력받아서 다른 타입을 반환하는 함수형 인터페이스 IntFunction<R> LongFunction<R>
+		 * DoubleFunction<R>
+		 */
+
+		IntFunction<Double> i = (su) -> {
+			double result = su / 3.0;
+			return result;
+		};
+		System.out.println(i.apply(5));
+
+		LongFunction<Double> l = (su) -> {
+			double result = su / 3.0;
+			return result;
+		};
+		System.out.println(l.apply(6));
+
+		DoubleFunction<Integer> d = (su) -> {
+			int result = (int) (su + 3);
+			return result;
+		};
+		System.out.println(d.apply(4.3));
+
+		/*
+		 * 기본자료형을 입력받아서 boolean을 반환하는 함수형 인터페이스 IntPredicate LongPredicate
+		 * DoublePredicate
+		 */
+
+		/*
+		 * 기본 자료형을 입력받아 결과를 반환하지 않는 함수형 인터페이스 IntConsumer LongConsumer DoubleConsumer
+		 */
+
+		/*
+		 * 인자를 받지 않고 기본 자료형 값을 생성하는 함수형 인터페이스 
+		 * IntSupplier 
+		 * LongSupplier 
+		 * DoubleSupplier
+		 * 
+		 * BiConsumer<T,U> : 두 개 매개변수 
+		 * BiPredicate<T,U> : 두 개 매개변수 하나의 boolean 형 반환
+		 * BiFunction<T,U,R> : 두 개 매개변수, 하나의 반환 
+		 * BinaryOperator<T> : 두 개 매개변수 같은타입이고 반환도 같은 타입임
+		 */
+
+	}
+
+}

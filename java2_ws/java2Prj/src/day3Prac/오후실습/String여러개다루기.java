@@ -1,0 +1,64 @@
+package day3Prac.오후실습;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.HashSet;
+import java.util.Random;
+import java.util.Set;
+import java.util.stream.Stream;
+
+public class String여러개다루기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//String[]
+		String[] list = new String[5];
+		list[0] = "grape";
+		list[1] = "banana";
+		list[2] = "mango";
+		list[3] = "orange";
+		list[4] = "apple";
+		
+		Stream<String> stream = Stream.of(list);
+		//출력하기
+		stream.forEach(item -> System.out.println(item));
+		
+		//정렬하기
+		System.out.println("---정렬후 출력하기---");
+		stream = Stream.of(list);
+		stream.sorted().forEach(item->{System.out.println(item);});
+		
+		//내림차순으로 정렬하기
+		System.out.println("---내림차순정렬하기---");
+		stream = Stream.of(list);
+		stream.sorted(Comparator.reverseOrder()).forEach(i->System.out.println(i));
+		
+		
+		ArrayList<String> fruits = new ArrayList<>();
+		fruits.add("grape");
+		fruits.add("banana");
+		fruits.add("mango");
+		fruits.add("orange");
+		fruits.add("apple");
+		
+		System.out.println("---arraylist 정렬하기---");
+		Stream<String> stream2 = fruits.stream();
+		stream2.sorted().forEach(i->System.out.println(i));
+		
+		System.out.println("---arraylist 내림차순---");
+		stream2 = fruits.stream();
+		stream2.sorted(Comparator.reverseOrder()).forEach(i->System.out.println(i));
+		
+		//1) 난수 스트림을 만들고  짝수의 합 구하기
+		Set<Integer> random = new HashSet<>();
+		Random r = new Random();
+		
+		for(int i=0;i<10;i++) {
+			random.add(r.nextInt(100));
+		}
+		Stream<Integer> stream3 = random.stream();
+		
+	}
+
+}

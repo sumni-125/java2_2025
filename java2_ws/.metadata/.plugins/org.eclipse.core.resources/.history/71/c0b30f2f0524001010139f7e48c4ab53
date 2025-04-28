@@ -1,0 +1,10 @@
+package day3Prac.오후실습;
+
+public class Function다른타입반환 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

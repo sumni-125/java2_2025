@@ -1,0 +1,14 @@
+package day3Prac.stream1;
+
+public class MovingMain {
+
+	public static void main(String[] args) {
+		
+		list.add( new Moving("장주원" ,"구룡포",100));
+		list.add( new Moving("이미현" ,"경기",80));
+		list.add( new Moving("김두식" ,"문산",88));
+		list.add( new Moving("장주원" ,"구룡포",100));
+		
+	}
+
+}

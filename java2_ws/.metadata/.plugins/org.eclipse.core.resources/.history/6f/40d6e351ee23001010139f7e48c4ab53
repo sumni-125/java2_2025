@@ -1,0 +1,24 @@
+package day3Prac.collection;
+
+import java.util.ArrayList;
+
+public class MapEx2 {
+	public static void main(String[] args) {
+
+		// key, value
+		// String, ArrayList<String>
+
+		ArrayList<String> fruit = new ArrayList<String>();
+
+		fruit.add("딸기");
+		fruit.add("사과");
+		fruit.add("망고");
+
+		ArrayList<String> drink  = new ArrayList<String>();
+
+		fruit.add("딸기");
+		fruit.add("사과");
+		fruit.add("망고");
+
+	}
+}

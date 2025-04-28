@@ -1,0 +1,43 @@
+package day3Prac.stream1;
+
+import java.util.ArrayList;
+import java.util.stream.Stream;
+
+public class MovingMain {
+
+	public static void main(String[] args) {
+
+		ArrayList<Moving> list = new ArrayList<Moving>();
+		list.add(new Moving("장주원", "구룡포", 100));
+		list.add(new Moving("이미현", "경기", 80));
+		list.add(new Moving("김두식", "문산", 88));
+		list.add(new Moving("장주원", "구룡포", 100));
+
+		// 스트림으로 알아와서 출력하기
+		Stream<Moving> stream = list.stream();
+		stream.forEach(item -> {
+			System.out.println(item.getName());
+		});
+
+		// 스트림으로 얻어와서 요소개수 구하기
+		stream = list.stream();
+		long count = stream.count();
+		System.out.println(count);
+
+		// 스트림으로 얻어와서 파워가 80 보다 큰 요소 출력하기
+		stream = list.stream();
+		long count2 = stream.filter(item -> item.getPower() > 80).count();
+		System.out.println(count2);
+		
+		stream = list.stream();
+		stream.filter(item->item.getPower()>=90).forEach(item->System.out.println(item));
+		
+		
+		// 스트림으로 얻어와서 정렬하고 출력하기 (파워순)
+		stream = list.stream();
+		stream.sorted((o1,o2)->{o1.getPower()-o2.getPower})
+		
+		
+	}
+
+}

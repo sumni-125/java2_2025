@@ -1,0 +1,19 @@
+package day3Prac.stream1;
+
+import java.util.Random;
+import java.util.Set;
+
+public class 로또만들기 {
+
+	public static void main(String[] args) {
+		
+		Set<Integer> lottos = new HashMap<>();
+		 
+		Random r = new Random();
+		
+		
+		
+		
+	}
+
+}

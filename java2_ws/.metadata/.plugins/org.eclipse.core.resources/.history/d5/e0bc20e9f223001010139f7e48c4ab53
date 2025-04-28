@@ -1,0 +1,10 @@
+package day3Prac.stream1;
+
+public class Hello출력하기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,5 @@
+package day3Prac.comparator;
+
+public class A요리사 implements 한식요리가가능한 {
+
+}

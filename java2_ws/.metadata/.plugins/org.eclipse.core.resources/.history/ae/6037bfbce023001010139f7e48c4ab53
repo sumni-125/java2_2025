@@ -1,0 +1,16 @@
+package day3Prac.collection;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapEx {
+	public static void main(String[] args) {
+		
+		//key, value
+		
+		Map<String, String> map = new HashMap<>();
+		
+		
+		
+	}
+}

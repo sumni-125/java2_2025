@@ -1,0 +1,23 @@
+package day3Prac.stream3;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class AcornToAcornDTO변환 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ArrayList<Acorn> list = new ArrayList<Acorn>();
+		list.add(null);
+		
+		List<AcornDTO>dtolist = list.stream()
+		.map(acorn->new AcornDTO(acorn.getId(),acorn.getName()))
+		.collect(Collectors.toList());
+		
+		list.stream().map(acorn -> new AcornDTO(acorn.getId(),acorn.getName()))
+		
+	}
+
+}

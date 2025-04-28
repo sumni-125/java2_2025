@@ -1,0 +1,32 @@
+package day3Prac.오후실습;
+
+import java.util.function.DoubleFunction;
+import java.util.function.IntFunction;
+import java.util.function.LongFunction;
+
+public class Function다른타입반환 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		/*
+		 * 기본자료형을 입력받아서 다른 타입을 반환하는 함수형 인터페이스 
+		 * IntFunction<R> 
+		 * LongFunction<R>
+		 * DoubleFunction<R>
+		 */
+		
+		IntFunction<Double> i = (su)->{
+			double result=su/3;
+			return result;
+		};
+		System.out.println(i.apply(5));
+		
+		LongFunction<Double> l = (su) -> {double result=su/3;
+		return result;};
+		
+		DoubleFunction<Integer> d = (su) -> {return su+3;};
+		
+	}
+
+}

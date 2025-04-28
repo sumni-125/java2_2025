@@ -1,0 +1,5 @@
+package day3Prac.comparator;
+
+public interface 한식요리가가능한 {
+
+}

@@ -1,0 +1,32 @@
+package day3Prac.collection;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+public class SetEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Set<String> list = new HashSet<>();
+
+		list.add("딸기");
+		list.add("딸기");
+		
+		list.add("망고");
+		list.add("오렌지");
+		
+		
+		for (String item : list) {
+			System.out.println(item);
+		}
+		
+		Iterator<String> it = list.iterator();
+		while(it.hasNext()) {
+			System.out.println(it.next());
+		}
+		
+		
+	}
+
+}

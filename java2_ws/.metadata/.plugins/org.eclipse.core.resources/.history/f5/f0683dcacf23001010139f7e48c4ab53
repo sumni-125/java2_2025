@@ -1,0 +1,18 @@
+package day3Prac.comparator;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		A요리사 a = new A요리사();
+		a.구절판만들기();
+		a.불고기전골만들기();
+		
+		//김치만두
+		//static 매서드 사용법(객체생성과무관함
+		//인터페이스이름(클래스이름).static매서드호출
+		한식요리가가능한.김치만두만들기();
+		
+	}
+
+}

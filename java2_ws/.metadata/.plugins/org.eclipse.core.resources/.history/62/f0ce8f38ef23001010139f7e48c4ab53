@@ -1,0 +1,47 @@
+package day3Prac.collection;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapEx2 {
+	public static void main(String[] args) {
+
+		// key, value
+		// String, ArrayList<String>
+
+		ArrayList<String> fruit = new ArrayList<String>();
+
+		fruit.add("딸기");
+		fruit.add("사과");
+		fruit.add("망고");
+
+		ArrayList<String> drink = new ArrayList<String>();
+
+		fruit.add("아메리카노");
+		fruit.add("라떼");
+		fruit.add("아이스티");
+
+		Map<String, ArrayList<String>> map = new HashMap<>();
+
+		map.put("fruits", fruit);
+		map.put("drinks", drink);
+
+		ArrayList<String> list1 = map.get("drinks");
+		list1.forEach(item -> System.out.println(item));
+
+		ArrayList<String> list2 = map.get("fruits");
+
+		// 람다식 ()->{}
+		// () 생략가능 -> 매개변수 한개
+		// {} 생략가능 -> 수행할 코드가 한줄
+
+		list2.forEach(item -> System.out.println(item));
+
+		// 맵 전체 출력하기
+		map.forEach((key, value) -> {
+			System.out.println();
+		});
+
+	}
+}

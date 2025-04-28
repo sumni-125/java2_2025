@@ -1,0 +1,17 @@
+package day3Prac.collection;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class set무빙 {
+
+	public static void main(String[] args) {
+		
+		
+		Set<Moving> list = new HashSet<>();
+		
+		list.add(new Moving("장주원","구룡포",100));
+		
+	}
+
+}

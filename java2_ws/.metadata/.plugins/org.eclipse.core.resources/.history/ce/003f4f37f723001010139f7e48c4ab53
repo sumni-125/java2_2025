@@ -1,0 +1,10 @@
+package day3Prac.stream1;
+
+public class 로또만들기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

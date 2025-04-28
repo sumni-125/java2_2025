@@ -1,0 +1,18 @@
+package day3Prac.collection;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapEx {
+	public static void main(String[] args) {
+
+		// key, value => 한 세트로 저장하는 자료구조
+
+		Map<String, String> map = new HashMap<>();
+
+		map.put("naver", "1234");
+		map.put("google", "0000");
+		map.put("acorn", "5678");
+
+	}
+}
