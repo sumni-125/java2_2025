@@ -1,0 +1,15 @@
+package day4Prac.오후실습;
+
+import java.util.ArrayList;
+
+public class SeoulRecommender implements CityRecommender{
+	
+	public  ArrayList<String> seoulList = new ArrayList<String>();
+	
+	@Override
+	public String recommend() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

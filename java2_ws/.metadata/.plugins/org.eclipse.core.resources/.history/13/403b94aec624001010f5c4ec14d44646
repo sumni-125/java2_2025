@@ -1,0 +1,57 @@
+package day4Prac.오후실습;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
+import java.util.Scanner;
+
+public class RecomendCity {
+	
+	CityRecommender cr;
+	
+	public void readFile(String region) throws FileNotFoundException, IOException {
+		
+		Properties p = new Properties();
+		p.load(new FileReader("src/day4Prac/오후실습/classPath.txt"));
+		
+		String name = (String)p.getProperty(region);
+		clazzz(
+	}
+	
+	public void clazzz(String name) {
+		Class clazz = Class.forName(name);
+	}
+	
+	public void run() {
+		System.out.println("지역을 선택하세요 (1.서울, 2.부산, 3.종료)");
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int menu = sc.nextInt();
+		while(true) {
+			switch(menu) {
+			case 1:
+				
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+				
+			default:
+				System.out.println("번호를 다시 입력하세요");
+				break;
+				
+			}
+		}
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

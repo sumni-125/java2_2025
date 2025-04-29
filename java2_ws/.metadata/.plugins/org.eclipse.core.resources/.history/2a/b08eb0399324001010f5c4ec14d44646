@@ -1,0 +1,23 @@
+package day4Prac.스트림추가;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.ArrayList;
+
+public class 이름개수구하기 {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		BufferedReader br = new BufferedReader(new FileReader("src/day4Prac/스트림추가/test.txt"));
+		
+		ArrayList<String> list = new ArrayList<>();
+		String str="";
+		while((str=br.readLine())!=null) {
+			list.add(str)
+		}
+		
+		
+	}
+
+}

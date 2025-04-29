@@ -1,0 +1,30 @@
+package day4Prac.reflect;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
+public class Ex06 {
+
+	public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, SecurityException,
+			InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+
+		Class clazz = Class.forName("day4Prac.reflect.Member");
+
+		Member m = (Member) clazz.getDeclaredConstructor().newInstance(args);
+
+		// printInfo
+		// m.printInfo();
+		// printInfo(); //객체정보 전달됨
+
+		Method method = clazz.getDeclaredMethod("printInfo");
+		method.invoke(m);// m->객체정보가 넘어가야함
+
+		// printSquare
+		Method method2 = clazz.getDeclaredMethod("printSquare", int.class);
+
+		// 메서드 호출
+		method2.invoke(m, 5);
+
+	}
+
+}

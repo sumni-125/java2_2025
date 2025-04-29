@@ -1,0 +1,2 @@
+Seoul=day4Prac.classPath.SeoulRecommand
+Busan=day4Prac.classPath.BusanRecommand

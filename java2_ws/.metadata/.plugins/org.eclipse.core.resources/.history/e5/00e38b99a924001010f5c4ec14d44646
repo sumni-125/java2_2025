@@ -1,0 +1,25 @@
+package day4Prac.계산기프로그램;
+
+public class Program6 {
+	
+	
+	Calculator calculator;
+	
+	//생성자 주입
+	public Program6(Calculator calculator) {
+		super();
+		this.calculator = calculator;
+	}
+
+	
+	
+	//세터 주입
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	
+}

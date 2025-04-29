@@ -1,0 +1,12 @@
+package day4Prac.reflect;
+
+public class Ex06 {
+
+	public static void main(String[] args) {
+
+		Class clazz = Class.forName("day4Prac.reflect.Member");
+		
+		
+	}
+
+}

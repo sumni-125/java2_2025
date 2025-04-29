@@ -1,0 +1,55 @@
+package day4Prac.오후2인실습_윤현기이수민;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Random;
+
+public class BusanRecommand implements CityRecommender {
+	
+	private ArrayList<String> cities = new ArrayList<>();
+	private String source = "";
+	
+	public BusanRecommand() {
+		loadCitiesFromFile();
+	}
+	
+	private void loadCitiesFromFile() {
+		try (BufferedReader br = new BufferedReader(new FileReader("src/day4Prac/오후실습/config.txt"))) {
+			String line;
+			boolean isCitySection = false;
+			
+			while ((line = br.readLine()) != null) {
+				if (line.startsWith("#")) {
+					if (line.contains("출처")) {
+						source = line.substring(2); // '# ' 이후의 출처 정보 저장
+					} else {
+						isCitySection = true; // 도시 목록 섹션 시작
+					}
+					continue;
+				}
+				
+				if (isCitySection && !line.trim().isEmpty()) {
+					cities.add(line.trim());
+				}
+			}
+		} catch (IOException e) {
+			System.out.println("파일을 읽는 중 오류가 발생했습니다: " + e.getMessage());
+		}
+	}
+	
+	@Override
+	public String recommend() {
+		if (cities.isEmpty()) {
+			return "추천할 도시가 없습니다.";
+		}
+		
+		Random random = new Random();
+		int randomIndex = random.nextInt(cities.size());
+		String randomCity = cities.get(randomIndex);
+		
+		return "부산 " + randomCity + "\n" + source;
+	}
+
+}

@@ -1,0 +1,10 @@
+package day4Prac.reflect;
+
+public class 파일읽기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

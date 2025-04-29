@@ -1,0 +1,35 @@
+package day4Prac.변경에유리한코드;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
+
+public class Main4 {
+
+	public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException {
+		//Dog객체 두개 만들기
+		
+		Animal animal = getAnimal() ;
+		animal.bark();
+		Animal animal2 = getAnimal();
+		animal2.bark();
+		
+	}
+	//객체를 얻어오는 부분을 매서드로 만들기
+	
+	private static Animal getAnimal() throws FileNotFoundException, IOException, ClassNotFoundException {
+		
+		//return new Cat();
+		Properties p = new Properties();
+		p.load(new FileReader("src/day4Prac/변경에유리한코드/config.txt"));
+		
+		String name = (String) p.get("Animal");
+		System.out.println(name);
+		
+		Class<T> c = Class.forName(name);
+		
+		return null;
+	}
+	
+}

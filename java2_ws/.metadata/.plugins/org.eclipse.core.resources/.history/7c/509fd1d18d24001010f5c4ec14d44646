@@ -1,0 +1,68 @@
+package day3Prac.실습;
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Random;
+import java.util.Set;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
+public class Randomevennum {
+
+	public static void main(String[] args) {
+
+		/*
+		 * String 여러개 다루기 String[] , ArrayList : 스트림으로 다루기
+		 * 
+		 * 난수 스트림을 만들고 짝수의 합 구하기
+		 */
+
+		Set<Integer> randomnum = new HashSet<>();
+
+		Random r = new Random();
+
+		for (int i = 0; i < 30; i++) {
+			randomnum.add(r.nextInt(100));
+		}
+
+		// 10개만 담을 배열
+		Integer[] randomnum1 = new Integer[10];
+
+		// 랜덤 숫자가 담긴 배열
+		Object[] evenarr = randomnum.toArray();
+
+		System.arraycopy(evenarr, 0, randomnum1, 0, 10);
+		System.out.println(Arrays.toString(randomnum1));
+
+		int hap = 0;
+		for (int i = 0; i < randomnum1.length; i++) {
+			if (randomnum1[i] % 2 == 0) {
+				hap += randomnum1[i];
+			}
+		}
+		System.out.println("배열로 만든 짝수의 합 : " + hap);
+		System.out.println();
+
+		IntStream stream = new Random().ints(1, 100).limit(10);
+		Stream<Integer> stream2 = stream.distinct().sorted().boxed();
+		List<Integer> list = stream2.collect(Collectors.toList());
+
+		list.forEach(item -> System.out.print(item+", "));
+		
+		List<Integer> evenList = list.stream().filter(item -> item % 2 == 0).collect(Collectors.toList());
+
+		int hap1 = 0;
+		for (Integer n : evenList) {
+			hap1 += n;
+		}
+		System.out.println("\n스트림으로 만든 짝수의 합 : " + hap1);
+
+		// stream.distinct().sorted().forEach(item -> System.out.print(item + ", "));
+		// int result = stream.filter(item -> item % 2 == 0).sum();
+		// System.out.println("스트림으로 만든 짝수의 합 : " + result);
+
+	}
+
+}

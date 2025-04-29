@@ -1,0 +1,16 @@
+package day4Prac.classPath;
+
+import java.util.ArrayList;
+
+public class SeoulRecommand implements CityRecommender {
+
+	public String[] seoulList = { "종로구", "중구", "용산구", "마포구", "강남구", "송파구", "서초구", "성동구", "은평구", "강서구" };
+
+	@Override
+	public String recommend() {
+		int length = seoulList.length;
+		
+		return seoulList[(int) (Math.random()*length)];
+	}
+
+}

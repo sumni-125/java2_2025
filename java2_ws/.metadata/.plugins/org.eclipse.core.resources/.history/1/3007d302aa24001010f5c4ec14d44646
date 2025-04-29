@@ -1,0 +1,44 @@
+package day4Prac.계산기프로그램;
+
+import java.util.Scanner;
+
+public class Program6 {
+	
+	
+	Calculator calculator;
+	
+	//생성자 주입 Program6이 생성될 때 매개변수로 계산기 객체를 받음
+	public Program6(Calculator calculator) {
+		super();
+		this.calculator = calculator;
+	}
+	
+	
+	public void run() {
+		System.out.println("프로그램 시작 ver6");
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("두 수 입력하세요");
+		int s1 = sc.nextInt();
+		int s2 = sc.nextInt();
+		
+		int total = calculator.add(s1, s2);
+		System.out.println(total);
+		
+		
+	}
+	
+	
+	//세터 주입
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Program6 p6 = new Program6(new A());//계산기 객체 주입
+		
+		p6.run();
+	}
+
+	
+}

@@ -1,0 +1,10 @@
+package day4Prac.스트림추가;
+
+public class 이름개수구하기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,5 @@
+package day4Prac.오후실습;
+
+public interface CityRecommender {
+    String recommend();
+}

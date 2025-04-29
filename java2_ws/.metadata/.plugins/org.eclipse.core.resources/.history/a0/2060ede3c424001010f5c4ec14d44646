@@ -1,0 +1,13 @@
+package day4Prac.오후실습;
+
+public class RecomendCity {
+	
+	CityRecommender cr;
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

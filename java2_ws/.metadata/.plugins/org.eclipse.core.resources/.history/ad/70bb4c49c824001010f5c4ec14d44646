@@ -1,0 +1,45 @@
+package day4Prac.실습;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("도시를 추천해드립니다!");
+        System.out.println("1. 서울");
+        System.out.println("2. 부산");
+        System.out.print("선택하세요 (1-2): ");
+        
+        int choice = scanner.nextInt();
+        CityRecommender recommender = null;
+        
+        try {
+            if (choice == 1) {
+                // 서울은 아직 구현되지 않았으므로 예외 발생
+                throw new IllegalArgumentException("수민님 여기다가 구현해주시면 됩니다");
+            } else if (choice == 2) {
+                // 리플렉션을 사용하여 BusanRecommand 클래스 동적 생성
+                Class<?> clazz = Class.forName("day4Prac.실습.BusanRecommand");
+                recommender = (CityRecommender) clazz.getDeclaredConstructor().newInstance();
+            } else {
+                System.out.println("잘못된 선택입니다.");
+                scanner.close();
+                return;
+            }
+            
+            // 추천 결과 출력
+            String recommendation = recommender.recommend();
+            System.out.println("\n추천 결과:");
+            System.out.println(recommendation);
+            
+        } catch (IllegalArgumentException e) {
+            System.out.println("오류: " + e.getMessage());
+        } catch (Exception e) {
+            System.out.println("오류가 발생했습니다: " + e.getMessage());
+            e.printStackTrace();
+        } finally {
+            scanner.close();
+        }
+    }
+}

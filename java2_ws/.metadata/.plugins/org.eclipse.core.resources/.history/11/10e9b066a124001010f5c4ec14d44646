@@ -1,0 +1,24 @@
+package day4Prac.reflect;
+
+import java.lang.reflect.Method;
+
+public class Ex06 {
+
+	public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, SecurityException {
+
+		Class clazz = Class.forName("day4Prac.reflect.Member");
+		
+		Member member = (Member) clazz.getDeclaredConstructor().newInstance(args);
+
+		// printInfo
+		//m.printInfo();
+		//printInfo();	//객체정보 전달됨
+		
+		Method m1 =clazz.getDeclaredMethod("printInfo");
+		m1.invoke(m1, args);
+		
+		// printSquare
+		
+	}
+
+}

@@ -1,0 +1,25 @@
+package day4Prac.계산기프로그램;
+
+public class Program5 {
+
+	Calculator calculator = new A();
+	
+	public void run() {
+		
+		System.out.println("프로그램 시작!! ver5");
+		
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+		
+	}
+
+}

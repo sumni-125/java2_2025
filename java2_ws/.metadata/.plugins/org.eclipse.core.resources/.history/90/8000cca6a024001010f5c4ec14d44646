@@ -1,0 +1,21 @@
+package day4Prac.reflect;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
+public class Ex05 {
+
+	public static void main(String[] args) throws ClassNotFoundException {
+		
+		
+		Class clazz = Class.forName("day4Prac.reflect.Member");
+		
+		Method[] methods = clazz.getDeclaredMethods();
+		
+		for(Method m : methods) {
+			System.out.println(m);
+		}
+		
+	}
+
+}

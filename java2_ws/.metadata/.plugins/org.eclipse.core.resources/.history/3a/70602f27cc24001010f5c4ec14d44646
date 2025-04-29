@@ -1,0 +1,38 @@
+package day4Prac.오후실습;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.util.Properties;
+import java.util.Scanner;
+
+// RecommendCity
+// CityRecommender
+
+
+
+
+public class RecommendCity {
+	
+	CityRecommender cr;    //   서울지역중에서 한 개 
+ 
+	
+	
+	public void setCr(CityRecommender cr) {
+		this.cr = cr;
+	}
+	
+	
+	
+	public void  print() {
+		String 지역  =cr.recommend();
+		System.out.println( 지역);
+	}
+
+	
+	
+	
+	
+
+}

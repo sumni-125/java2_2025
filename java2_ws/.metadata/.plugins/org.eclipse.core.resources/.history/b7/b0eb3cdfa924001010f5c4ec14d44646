@@ -1,0 +1,29 @@
+package day4Prac.계산기프로그램;
+
+public class Program6 {
+	
+	
+	Calculator calculator;
+	
+	//생성자 주입 Program6이 생성될 때 매개변수로 계산기 객체를 받음
+	public Program6(Calculator calculator) {
+		super();
+		this.calculator = calculator;
+	}
+	
+	
+	public void run() {
+		System.out.println("프로그램 시작 ver6");
+	}
+	
+	
+	//세터 주입
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	
+}

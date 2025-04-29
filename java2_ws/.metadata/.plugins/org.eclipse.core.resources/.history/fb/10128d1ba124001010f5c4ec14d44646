@@ -1,0 +1,15 @@
+package day4Prac.reflect;
+
+public class Ex06 {
+
+	public static void main(String[] args) throws ClassNotFoundException {
+
+		Class clazz = Class.forName("day4Prac.reflect.Member");
+
+		// printInfo
+
+		// printSquare
+
+	}
+
+}
