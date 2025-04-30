@@ -1,0 +1,18 @@
+
+package day5Prac.재귀호출실습;
+
+public class 합구하기2 {
+
+	public static void main(String[] args) {
+
+		int result = getTotal(5);
+	}
+
+	private static int getTotal(int n) {
+		if (n == 1) {
+			return 1;
+		} else {
+			return n + getTotal(n - 1);
+		}
+	}
+}

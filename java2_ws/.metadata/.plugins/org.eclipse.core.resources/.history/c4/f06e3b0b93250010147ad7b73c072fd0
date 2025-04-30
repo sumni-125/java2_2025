@@ -1,0 +1,33 @@
+package day5Prac.재귀호출실습;
+
+public class 합구하기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println("재귀호출이란? 자기자신을");
+		System.out.println("주의사항 반드시 졸료조건이 있어야한다");
+		
+		int result = getTotal(5);
+		System.out.println(result);
+		
+		int resultR = getTotalR(5);
+	}
+	
+	private static int getTotalR(int n) {
+		
+		if(n==1) {
+			return 1;
+		}else {
+			return n+getTotalR(n-1);
+		}
+	}
+	private static int getTotal(int n) {
+		int sum=0;
+		for(int i=1;i<=n;i++) {
+			sum+=i;
+		}
+		return sum;
+	}
+
+}

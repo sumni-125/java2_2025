@@ -1,0 +1,16 @@
+package day5Prac.enum실습하기;
+
+public class MonitorMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Monitor monitor1 = new Monitor("와이드모니터","DARK","samsung");
+		Monitor monitor2 = new Monitor("소형모니터","LIGHT","samsung");
+		Monitor monitor3 = new Monitor("중형모니터","YELLO","samsung");
+		
+		
+		
+	}
+
+}

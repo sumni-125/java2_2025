@@ -1,0 +1,9 @@
+package day5Prac.애너테이션실습;
+
+
+
+//유지범위 @Retention(RetentionPolicy.RUNTIME)
+//기본 -> RetentionPolicy.
+public @interface Count {
+
+}

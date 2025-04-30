@@ -1,0 +1,16 @@
+package day5Prac.enum실습하기;
+
+public class ModeClassMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		String mode = ModeClass.DARK;
+		mode = ModeClass.LIGHT;
+		
+		
+		
+	}
+
+}

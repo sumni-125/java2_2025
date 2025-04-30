@@ -1,0 +1,10 @@
+package day5Prac.스택큐;
+
+public class 간단한괄호문제_스택 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

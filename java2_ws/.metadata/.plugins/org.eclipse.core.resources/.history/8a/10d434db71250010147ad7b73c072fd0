@@ -1,0 +1,23 @@
+package day5Prac.오후실습4번;
+
+import java.util.ArrayList;
+
+public class DrinkMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Drink> dlist = new ArrayList<Drink>();
+		
+		dlist.add(new Drink("꿀 수박주스",37));
+		
+		dlist.forEach(item->{
+			verifi(item);
+		});
+		
+	}
+	private static void verifi(Drink d) {
+		
+		
+		
+	}
+}

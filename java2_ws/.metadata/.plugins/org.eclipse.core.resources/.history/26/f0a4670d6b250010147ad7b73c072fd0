@@ -1,0 +1,10 @@
+package day5Prac.애너테이션실습;
+
+public class FoodMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

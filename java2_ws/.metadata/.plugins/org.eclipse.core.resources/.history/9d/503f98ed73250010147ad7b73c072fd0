@@ -1,0 +1,5 @@
+package day5Prac.오후실습4번;
+
+public @interface MaxSuger {
+	int value();
+}

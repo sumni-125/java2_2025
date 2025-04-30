@@ -1,0 +1,27 @@
+package day5Prac.필드정보가져오기;
+
+import java.lang.reflect.Field;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		
+		
+		//store객체의 메서드 정보 출럭하기
+		//store객체으 필드정보 출력하기
+		
+		Store store = new Store();
+		
+		//
+		//클래스 정보 얻어오기
+		Class clazz = store.getClass();
+		
+		//메서드 정보 출력하기
+		//필드 정보 출력하기
+		
+		Field[] fields = clazz.getDeclaredFields();
+		for(Field field : fields)
+		
+	}
+
+}

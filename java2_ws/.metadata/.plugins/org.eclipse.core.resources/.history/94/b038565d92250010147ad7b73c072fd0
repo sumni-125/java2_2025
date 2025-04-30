@@ -1,0 +1,10 @@
+package day5Prac.재귀호출실습;
+
+public class 합구하기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

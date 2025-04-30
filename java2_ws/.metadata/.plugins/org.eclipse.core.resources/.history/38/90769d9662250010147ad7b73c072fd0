@@ -1,0 +1,36 @@
+package day5Prac.애너테이션실습;
+
+import java.lang.reflect.Field;
+
+public class StoreMain {
+
+	public static void main(String[] args) throws IllegalArgumentException, IllegalAccessException {
+
+		// Store 객체 검증하기
+		Store s = new Store(4, 11);
+		
+		//필드에 정해진 애너테이션의 정보와 같은지 검증하기
+		
+		//1. 객체의 클래스의 정보 가져오기
+		Class clazz = s.getClass();
+		
+		//2. 선언된 필드정보 가져오기
+		Field[] fields = clazz.getDeclaredFields();
+		
+		for(Field f:fields) {
+			//System.out.println(f.getName()+f.get(s));
+			
+			Count anno = f.getAnnotation(Count.class);
+			if(anno!=null) {//Count 애너테이션을 필드가 가지고 있으면 //.isAnnotation??
+				//애너테이션에 설정된 값
+				int expextedValue = anno.value();
+				
+				//실제 객체의 필드(속성)의 값 
+				int value = (int)field.get(s);
+			}
+		}
+		
+		
+	}
+
+}

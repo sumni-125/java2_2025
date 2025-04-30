@@ -1,0 +1,12 @@
+package day5Prac.enum실습하기;
+
+public class 게임캐릭터메인 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		게임캐릭터  = new 게임캐릭터();
+		
+	}
+
+}

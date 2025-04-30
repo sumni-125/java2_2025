@@ -1,0 +1,26 @@
+package day5Prac.스택큐;
+
+class Game {
+	String name;
+	int price;
+
+	public Game(String name, int price) {
+		this.name = name;
+		this.price = price;
+	}
+
+	@Override
+	public String toString() {
+		return "Game [name=" + name + ", price=" + price + "]";
+	}
+
+}
+
+public class 우선순위큐문제 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

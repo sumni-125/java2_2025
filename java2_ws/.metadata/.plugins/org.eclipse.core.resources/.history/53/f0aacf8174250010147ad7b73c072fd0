@@ -1,0 +1,43 @@
+package day5Prac.오후실습4번;
+
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+
+public class DrinkMain {
+
+	public static void main(String[] args)
+			throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException {
+		// TODO Auto-generated method stub
+		ArrayList<Drink> dlist = new ArrayList<Drink>();
+
+		dlist.add(new Drink("꿀수박주스", 37));
+		dlist.add(new Drink("꿀수박 화채 스무디", 86));
+		dlist.add(new Drink("꿀복숭아 스무디", 86));
+		dlist.add(new Drink("저당 POP POP 매실 아이스티", 14));
+		dlist.add(new Drink("헛개리카노", 0));
+		
+		for(Drink d: dlist) {
+			verifi(d);
+		}
+		verifi(dlist.get(0));
+
+	}
+
+	private static void verifi(Drink d)
+			throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException {
+		Class clazz = d.getClass();
+		Field f = clazz.getDeclaredField("sugar");
+		
+		int realValue = (int)f.get(d);
+		MaxSuger annotation = f.getAnnotation(MaxSuger.class);
+		int annoValue = annotation.value();
+		
+		if(realValue>annoValue) {
+			System.out.println("당 섭취를 줄이세요");
+		}else {
+			System.out.println("ok~~");
+		}
+		
+		
+	}
+}

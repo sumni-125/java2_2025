@@ -1,0 +1,6 @@
+package day5Prac.enum실습하기;
+
+public class ModeClass {
+	public static final String DARK="DARK";
+	public static final String LIGHT="LIGHT";
+}

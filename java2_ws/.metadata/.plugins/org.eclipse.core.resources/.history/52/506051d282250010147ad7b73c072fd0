@@ -1,0 +1,17 @@
+package day5Prac.애너테이션실습;
+
+public class MyLibMain2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		MyLib lib = new MyLib();
+		
+		lib.printStar2(15);
+		
+		Class clazz = lib.getClass();
+		
+		
+	}
+
+}

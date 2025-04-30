@@ -50,3 +50,15 @@
 1745912421422	Rename package 'day4Prac.오후2인실습'
 1745912447142	Copy elements
 1745913181681	Copy elements
+1745971635029	Move compilation unit
+1745971662623	Delete element
+1745971841706	Copy compilation unit
+1745975645203	Rename package 'day5Prac.애너테이션'
+1745978893415	Rename type 'WeekDayAvail'
+1745978971987	Rename type 'User'
+1745979211699	Rename type 'Emlpoyee'
+1745979226521	Rename compilation unit 'EmlpoyeeMain.java'
+1745980581143	Extract method '검증하기'
+1745980602822	Copy compilation unit
+1745980846981	Copy compilation unit
+1745997435491	Copy compilation unit

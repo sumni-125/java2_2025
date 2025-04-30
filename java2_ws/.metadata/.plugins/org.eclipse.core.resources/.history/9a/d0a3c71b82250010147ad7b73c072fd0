@@ -1,0 +1,40 @@
+package day5Prac.애너테이션실습;
+
+import java.lang.reflect.Method;
+
+public class MyLibMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		MyLib lib = new MyLib();
+		//lib.printStar();
+		
+		Class clazz = lib.getClass();
+		Method[] methods = clazz.getDeclaredMethods();
+		
+		for(Method m:methods) {
+			System.out.println(m);
+			
+			//@Before 애너테이션 
+			Before b = m.getAnnotation(Before.class);
+			
+			if(b != null) {
+				String beforeStr = b.before();
+				
+				m.invoke(methods, args);
+				
+			}
+			
+			
+			
+		}
+		
+		
+		
+		
+		
+		
+	}
+
+}

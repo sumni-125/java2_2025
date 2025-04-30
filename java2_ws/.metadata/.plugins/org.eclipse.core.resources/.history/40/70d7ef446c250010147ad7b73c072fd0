@@ -1,0 +1,42 @@
+package day5Prac.애너테이션실습;
+
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.List;
+
+public class FoodMain2 {
+
+	public static void main(String[] args) throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException {
+		// TODO Auto-generated method stub
+		List<Food> list = new ArrayList<E>();
+		
+		list.add(new Food("비빔밥",530));
+		list.add(new Food("샐러드",270));
+		list.add(new Food("어묵",180));
+		list.add(new Food("돈가스",480));
+		list.add(new Food("우동",380));
+		
+		검증하기(f);
+		
+		
+	}
+
+	private static void 검증하기(Food f) throws NoSuchFieldException, IllegalAccessException {
+		Class clazz = f.getClass();
+		Field field = clazz.getDeclaredField("cal");
+		
+		// 필드에 값 가져오기
+		// 애너테이션 정보가져오기
+		
+		int realValue = (int) field.get(f);
+		MaxCalorie anno = field.getAnnotation(MaxCalorie.class);
+		int annoValue = anno.value();
+		
+		if(realValue>annoValue) {
+			System.out.println("x");
+		}else {
+			System.out.println("o");
+		}
+	}
+	
+}

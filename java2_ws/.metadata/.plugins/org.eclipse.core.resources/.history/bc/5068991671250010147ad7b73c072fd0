@@ -1,0 +1,7 @@
+package day5Prac.오후실습4번;
+
+public class Drink {
+	String name;
+	@MaxSuger(100)
+	int sugar;
+}

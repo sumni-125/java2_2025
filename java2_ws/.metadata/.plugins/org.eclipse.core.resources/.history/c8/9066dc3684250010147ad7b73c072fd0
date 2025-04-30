@@ -1,0 +1,7 @@
+package day5Prac.enum실습하기;
+
+public class Monitor {
+	String name;
+	String mode;	//DARK LIGHT
+	String brand;
+}	

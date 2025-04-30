@@ -1,0 +1,14 @@
+package day5Prac.복습;
+
+public class 흑백요리사프로그램 {
+	
+	요리사리스트 list;// 필요한 인터페이스
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

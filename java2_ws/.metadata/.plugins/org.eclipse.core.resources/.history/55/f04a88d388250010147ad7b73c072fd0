@@ -1,0 +1,6 @@
+package day5Prac.enum실습하기;
+
+public class 게임캐릭터 {
+	String name;
+	CharacterState state;
+}

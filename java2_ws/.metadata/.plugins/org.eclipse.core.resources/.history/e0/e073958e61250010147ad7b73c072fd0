@@ -1,0 +1,15 @@
+package day5Prac.애너테이션실습;
+
+public class StoreMain {
+
+	public static void main(String[] args) {
+		
+		
+		//Store 객체 검증하기
+		Store s = new Store(4,11);
+		
+		
+		
+	}
+
+}

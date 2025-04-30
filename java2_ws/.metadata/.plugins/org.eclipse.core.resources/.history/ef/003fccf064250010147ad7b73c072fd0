@@ -1,0 +1,26 @@
+package day5Prac.애너테이션실습;
+
+public class CustomerMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Customer c = new Customer("홍길동","010-1111-2222");
+		//customer rorcp rjawmd
+		
+		검증하기(c);
+		
+	}
+
+	private static void 검증하기(Object c) {
+		
+		//1. 객체에 대한 클래스 정보 얻어오기
+		Class clazz = c.getClass();
+		
+		//2. 필드정보 가져오기
+		Field[] fields = clazz.getDeclaredFields();
+		
+		
+	}
+}

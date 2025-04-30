@@ -1,0 +1,27 @@
+package day5Prac.복습;
+
+public class 흑백요리사프로그램 {
+	
+	요리사리스트 list;// 필요한 인터페이스
+	
+	public void setList(요리사리스트 list) {
+		this.list = list;
+	}
+	
+	public void run() {
+		System.out.println("흑백요리사 프로그램 시작");
+		
+		//1. 흑요리사, 또는 백요리사 선택
+		
+		System.out.println("요리사 명단 입니다");
+		
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

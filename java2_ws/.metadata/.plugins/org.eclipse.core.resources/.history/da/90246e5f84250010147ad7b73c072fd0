@@ -1,0 +1,15 @@
+package day5Prac.enum실습하기;
+
+public class MonitorMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Monitor m = new Monitor("와이드모니터","DARK","samsung");
+		
+		
+		
+		
+	}
+
+}

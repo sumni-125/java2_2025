@@ -1,0 +1,10 @@
+package day5Prac.애너테이션실습;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+//유지범위 @Retention(RetentionPolicy.RUNTIME)
+
+public @interface Count {
+
+}
