@@ -1,0 +1,2 @@
+Job=day4.prac.실습.Warrior
+Clothe=day4.prac.실습.WearWarrior

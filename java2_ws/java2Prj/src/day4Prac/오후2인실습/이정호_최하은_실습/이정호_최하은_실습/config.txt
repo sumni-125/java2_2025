@@ -1,0 +1,4 @@
+1=day4Prac.개인실습.Add
+2=day4Prac.개인실습.Minus
+3=day4Prac.개인실습.Multi
+4=day4Prac.개인실습.Divide
